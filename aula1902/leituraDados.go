@@ -24,8 +24,14 @@ func main() {
 	fmt.Println(nome)
 
 	leitor := bufio.NewReader(os.Stdin)
-	fmt.Println("Informe um nome")
+	fmt.Print("Informe um nome")
 	nome, _ = leitor.ReadString('\n')
 	nome = strings.ReplaceAll(nome, "\n", "")
 	fmt.Println(nome)
+
+	a := 4.5
+	fmt.Println("O número de a é %.2f\n", a)
+
+	texto := fmt.Sprintf("O numero de a é %.2f\n", a)
+	fmt.Println(texto)
 }
