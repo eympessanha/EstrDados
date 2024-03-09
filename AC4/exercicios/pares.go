@@ -3,16 +3,7 @@ considerado ordenado crescentemente, e um valor alvo, encontre um par de número
  ao valor alvo. Se nenhum par for encontrado, retorne um valor (-1, -1) indicando que nenhum par foi encontrado.
   Resolva esse problema com um algoritmo cuja complexidade é O(n).*/
 
-package main
-
-import "fmt"
-
-func main() {
-	lista := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	alvo := 15
-
-	fmt.Println(encontraPar(lista, alvo))
-}
+package AC4
 
 func encontraPar(lista []int, alvo int) (int, int) {
 	for i := 0; i <= len(lista)-1; i++ {

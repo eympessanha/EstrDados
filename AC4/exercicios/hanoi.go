@@ -1,7 +1,4 @@
-package main
-
-import 	"fmt"
-
+package AC4
 
 func procedimentoHanoi(n int, origem, trabalho, destino string) {
 
@@ -11,10 +8,3 @@ func procedimentoHanoi(n int, origem, trabalho, destino string) {
 	procedimentoHanoi(n-1, trabalho, origem, destino)
 }
 
-func main() {
-	n := 3
-	origem, trabalho, destino := "A", "B", "C"
-
-	fmt.Printf("Resolvendo a Torre de Hanói para %d discos\n", n)
-	procedimentoHanoi(n, origem, destino, trabalho)
-}
