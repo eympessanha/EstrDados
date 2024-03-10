@@ -6,14 +6,28 @@ considerado ordenado crescentemente, e um valor alvo, encontre um par de número
 package AC4
 
 func encontraPar(lista []int, alvo int) (int, int) {
-	for i := 0; i <= len(lista)-1; i++ {
-		for j := 1; j <= len(lista); j++ {
-			if i+j == alvo {
-				return i, j
-			}
-		}
-	}
-	return -1, -1
+	i := 0
+	j := 1
+	for j <= len(lista) {
+		soma := 
+
+
+  for ponteiro_esquerdo < ponteiro_direito {
+    soma := array[ponteiro_esquerdo] + array[ponteiro_direito]
+
+    if soma == desejado {
+      return ponteiro_esquerdo, ponteiro_direito
+    } else if soma < desejado {
+      ponteiro_esquerdo++
+    } else {
+      ponteiro_direito--
+    }
+  }
+
+  return -1, -1
+}
+
+	
 }
 
 // corrigir complexidade
