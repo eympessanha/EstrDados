@@ -7,27 +7,19 @@ package AC4
 
 func encontraPar(lista []int, alvo int) (int, int) {
 	i := 0
-	j := 1
-	for j <= len(lista) {
-		soma := 
+	j := len(lista) - 1
+	for i<j {
+		soma := lista[i] + lista[j]
 
-
-  for ponteiro_esquerdo < ponteiro_direito {
-    soma := array[ponteiro_esquerdo] + array[ponteiro_direito]
-
-    if soma == desejado {
-      return ponteiro_esquerdo, ponteiro_direito
-    } else if soma < desejado {
-      ponteiro_esquerdo++
+    if soma == alvo {
+      return i,j
+    } else if soma < alvo {
+      i++
     } else {
-      ponteiro_direito--
+      j--
     }
   }
-
   return -1, -1
 }
 
 	
-}
-
-// corrigir complexidade
