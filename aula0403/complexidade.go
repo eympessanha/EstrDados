@@ -4,17 +4,17 @@ func main() {
 }
 
 func buscaMatriz(m [][]int, n int, x int) bool {
-	var i, j int
-	i = 0
 
-	for i < n {
-		for j < n {
+	for i := 0; i < n; i++ {
+		for j := 0; j < n; j++ {
 			if m[i][j] == x {
 				return true
 			}
-			j++
 		}
-		i++
 	}
 	return false
 }
+
+/*Dado um array de números inteiros positivos e um valor alvo, encontre um par de números no array
+cuja soma seja igual ao valor alvo. Se nenhum par for encontrado, retorne um valor (-1, -1)
+indicando que nenhum par foi encontrado*/
