@@ -4,7 +4,6 @@ import  "fmt"
 
 func main() {
 	var t int
-            fmt.Println(“Informe a quantidade de casos de teste”)
 	fmt.Scanln(&t)
 
 	for i := 0; i < t; i++ {
